@@ -1,12 +1,20 @@
+# Introduction
+Through experiment clustering, we can self-evaluate as a good or bad employee. Based on information from labor dataset, i used partition (Kmean) and hierarchical (AGNES) methods for analyzing an input employee.
+
+Blog: https://ongxuanhong.wordpress.com/2015/08/27/gom-nhom-clustering-analysis-tap-du-lieu-labor/
+
 # Download links
 * Link: https://archive.ics.uci.edu/ml/machine-learning-databases/labor-negotiations/labor-negotiations.data
 * Description: https://archive.ics.uci.edu/ml/machine-learning-databases/labor-negotiations/labor-negotiations.names
 
-# Mô tả sơ lược về dữ liệu
-* Số mẫu: 57
-* Số thuộc tính: 17
+# Exploratory analysis
 
-|Tên thuộc tinh|loại thuộc tính|số giá trị thiếu|
+![Exploratory analysis](https://ongxuanhong.files.wordpress.com/2015/08/load-labor-dataset.png)
+
+* Number of instances: 57
+* Number of attributes: 17
+
+|Name|Type|Missing value|
 |---|---|---|
 |duration|numeric|1 (2%)|
 |wage increase in first year|numeric|1 (2%)|
@@ -25,13 +33,13 @@
 |bereavement|nomial|27 (47%)|
 |contribution towards the health plan|nomial|20 (35%)|
 
-# Thuật toán chạy 2 lần với dữ liệu đã điền giá trị thiếu và dữ liệu chưa điền giá trị thiếu
-* Chọn số nhóm bằng 2
-* Sử dụng kỹ thuật đánh giá Classes To Clusters
-* Chọn độ đo khoảng cách Euclide
-* A: Chưa xử lý giá trị thiếu, B: Đã xử lý giá trị thiếu
+# Algorithm run with missing and replaced missing value
+* Number of group: 2
+* Evaluating with Classes To Clusters method
+* Using Euclide distance
+* A: has missing value, B: replaced missing value
 
-|Thuật toán|Số mẫu gom nhóm sai (A)|Số mẫu gom nhóm sai (B)|
+|Algorithm|Incorrectly clustered instances (A)|Incorrectly clustered instances (B)|
 |---|---|---|
 |SimpleKMeans|13.0 (22.807%)|13.0 (22.807%)|
 |AGNES với Single Link|20.0 (35.0877%)|19.0 (33.333%)|
