@@ -1,9 +1,9 @@
 # Gom nhóm (Clustering analysis) tập dữ liệu Labor
 Trong bài viết này, ta sẽ áp dụng các phương pháp gom nhóm (clustering) trên tập dữ liệu Labor. Đây là tập dữ liệu chứa các thông tin (số ngày nghỉ, số giờ làm việc, lương tăng hàng năm, …) để phân biệt nhân viên tốt (good) và nhân viên không tốt (bad). Hai thuật toán được sử dụng là K-mean và Hierarchical Clustering (AGNES). Để dễ tiếp cận, các phương pháp được thực hiện với Weka.
 
-**Tập dữ liệu:** labor
-**Địa chỉ:** https://archive.ics.uci.edu/ml/machine-learning-databases/labor-negotiations/labor-negotiations.data
-**Mô tả:** https://archive.ics.uci.edu/ml/machine-learning-databases/labor-negotiations/labor-negotiations.names
+- **Tập dữ liệu:** labor
+- **Địa chỉ:** https://archive.ics.uci.edu/ml/machine-learning-databases/labor-negotiations/labor-negotiations.data
+- **Mô tả:** https://archive.ics.uci.edu/ml/machine-learning-databases/labor-negotiations/labor-negotiations.names
 
 
 # Mô tả sơ lược về dữ liệu
